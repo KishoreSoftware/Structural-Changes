@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<!-- <types>
+		<members>CDP_Deal__c.Executive_Summary__c</members>
+		<name>CustomField</name>
+	</types> -->
+	<!-- <types>
+		<members>CDP_Deal_Geography.Opportunity_Zone</members>
+		<name>CustomMetadata</name>
+	</types> -->
+	<!-- <types>
+		<members>UserBeforeUpdateHandler</members>
+		<members>UserBeforeInsertHandler</members>
+		<name>ApexClass</name>
+	</types> -->
+	<!-- <types>
+		<members>CDP_Deal__c.Opportunity_Zone__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>RESTClientForOppZone</members>
+		<name>ApexClass</name>
+	</types> -->
+	<!-- <types>
+		<members>CDP_Asset__c.Estimated_TEI__c</members>
+		<name>CustomField</name>
+	</types>
+		<types>
+		<members>CDP_Asset__c.Legal_Entity__c</members>
+		<name>CustomField</name>
+	</types>-->
+	<!-- <types>
+		<members>CDP_Deal_Snapshot__c.Price_Per_Acre__c</members>
+		<members>CDP_Deal_Snapshot__c.Price_Per_Hectare__c</members>
+		<members>CDP_Deal_Snapshot__c.Price_Per_SQF__c</members>
+		<members>CDP_Deal_Snapshot__c.Price_Per_SQM__c</members>
+		<members>CDP_Deal_Snapshot__c.Price_Per_MU__c</members>
+		<members>CDP_Deal_Snapshot__c.Price_Per_Tsubo__c</members>
+		<name>CustomField</name>
+	</types> -->
+<!-- 	 <types>
+        <members>Deal</members>
+        <name>FlexiPage</name>
+    </types> -->
+	<!-- <types>
+        <members>CDP_Deal__c-Deal Layout</members>
+        <name>Layout</name>
+    </types> -->
+	<!-- <types>
+        <members>*</members>
+        <name>Layout</name>
+    </types> -->
+	<!-- <types>
+	    <members>*</members>
+	    <name>ApprovalProcess</name>
+	</types>
+	<types>
+        <members>CDP_Asset_Lat_Long_Updater_for_Contact</members>
+        <name>Flow</name>
+    </types> -->
+	<types>
+        <members>Opportunity</members>
+        <name>CustomObject</name>
+    </types>
+	<!-- <types>
+        <members>Account</members>
+        <name>CustomObject</name>
+    </types> -->
+	<!-- <types>
+        <members>*</members>
+        <name>PermissionSet</name>
+    </types> -->
+   <!--  <types>
+        <members>Account</members>
+        <name>CustomObject</name>
+    </types>
+	<types>
+        <members>Contact</members>
+        <name>CustomObject</name>
+    </types> -->
+	<!-- <types>
+        <members>CDPDealFieldDetails</members>
+        <name>ApexClass</name>
+    </types> -->
+	<!-- <types>
+        <members>Capital_Deployment</members>
+        <name>CustomApplication</name>
+    </types> -->
+    <!-- <types>
+        <members>CDP_Deals</members>
+        <name>CustomTab</name>
+    </types> -->
+    <!-- <types>
+        <members>*</members>
+        <name>PermissionSet</name>
+    </types> -->
+    <!-- <types>
+        <members>*</members>
+        <name>ApexPage</name>
+    </types>  -->
+	<!-- <types>
+		<members>Admin</members>
+		<name>Profile</name>
+	</types> -->
+	<!-- <types>
+        <members>DealDownloadPDF</members>
+		<members>DealDownloadCSV</members>
+        <name>ApexPage</name>
+    </types> -->
+	<!-- <types>
+		<members>CDP_Deal_Snapshot__c.IC_Date__c</members>
+		<name>CustomField</name>
+	</types>  -->
+	<!-- <types>
+		<members>CDP_Deal_Snapshot__c.Asset_Type__c</members>
+		<name>CustomField</name>
+	</types> 
+	<types>
+		<members>CDP_Deal_Snapshot__c.Custom_Type__c</members>
+		<name>CustomField</name>
+	</types>  -->
+    <!-- <types>
+    	<members>images</members>
+    	<name>Document</name>
+    </types> -->
+	<!-- <types>
+		<members>CDP_Deal_Portfolio_Asset.Developable_Area</members>
+		<members>CDP_Deal_Portfolio_Asset.Developable_Area_UOM</members>
+		<name>CustomMetadata</name>
+    </types> -->
+   <version>47.0</version>
+</Package>
