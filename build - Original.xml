@@ -1,0 +1,95 @@
+<project basedir="." xmlns:sf="antlib:com.salesforce">
+
+    <taskdef resource="com/salesforce/antlib.xml" classPath="lib/ant-salesforce.jar" uri="antlib:com.salesforce" />
+
+    <property file="build.properties" />
+
+    <target name="deployToAllDevSandboxes" description="Deploys package to all Dev sandboxes">
+
+        <echo message="Deploying to MED" />
+        <sf:deploy username="@minusculetechnologies.com.med" password="" serverurl="test.salesforce.com" deployRoot="src" />
+
+        <echo message="Deploying to rasik" />
+        <sf:deploy username="@minusculetechnologies.com.rasik" password="" serverurl="test.salesforce.com" deployRoot="src" />
+
+        <echo message="Deploying to sendilc" />
+        <sf:deploy username="@minusculetechnologies.com.sendilc" password="" serverurl="test.salesforce.com" deployRoot="src" />
+
+        <echo message="Deploying to MinDev1" />
+        <sf:deploy username="@minusculetechnologies.com.mindev1" password="" serverurl="test.salesforce.com" deployRoot="src" />
+
+        <echo message="Deploying to MinDev2" />
+        <sf:deploy username="@minusculetechnologies.com.mindev2" password="" serverurl="test.salesforce.com" deployRoot="src" />
+
+        <echo message="Deploying to MinDev3" />
+        <sf:deploy username="@minusculetechnologies.com.mindev3" password="" serverurl="test.salesforce.com" deployRoot="src" />
+
+        <echo message="Deploying to MinDev4" />
+        <sf:deploy username="@minusculetechnologies.com.mindev4" password="" serverurl="test.salesforce.com" deployRoot="src" />
+
+        <echo message="Deploying to MinDev5" />
+        <sf:deploy username="@minusculetechnologies.com.mindev5" password="" serverurl="test.salesforce.com" deployRoot="src" />
+
+        <echo message="Deploying to MinDev6" />
+        <sf:deploy username="@minusculetechnologies.com.mindev6" password="" serverurl="test.salesforce.com" deployRoot="src" />
+
+        <echo message="Deploying to MinDev7" />
+        <sf:deploy username="@minusculetechnologies.com.mindev7" password="" serverurl="test.salesforce.com" deployRoot="src" />
+
+        <echo message="Deploying to MinDev8" />
+        <sf:deploy username="@minusculetechnologies.com.mindev8" password="" serverurl="test.salesforce.com" deployRoot="src" />
+
+        <echo message="Deploying to MinDev9" />
+        <sf:deploy username="@minusculetechnologies.com.mindev9" password="" serverurl="test.salesforce.com" deployRoot="src" />
+
+        <echo message="Deploying to MinDev10" />
+        <sf:deploy username="@minusculetechnologies.com.mindev10" password="" serverurl="test.salesforce.com" deployRoot="src" />
+
+    </target>
+	<target name="retrieveQA">
+        <echo message="Retrieving src from QA" />
+        <sf:retrieve username="kishore@minusculetechnologies.com.qa" 
+		password="Lenovo@2019" 
+		serverurl="test.salesforce.com" 
+		retrieveTarget="src/QA" 
+		unpackaged="src/package-objects.xml" />
+    </target>
+	<target name="deployToSandboxQA" description="Deploys package to all of the sandbox">
+        <echo message="Deploying to kishore@minusculetechnologies.com.mindev1" />
+        <sf:deploy username="kishore@minusculetechnologies.com.mindev1" 
+		password="Lenovo@2019" 
+		serverurl="test.salesforce.com" 
+		deployRoot="src/QA" />
+    </target>
+	<target name="deployToSandbox" description="Deploys package to all of the sandbox">
+        <echo message="Deploying to kishore@minusculetechnologies.com.mindev1" />
+        <sf:deploy username="kishore@minusculetechnologies.com.mindev1" 
+		password="Lenovo@2019" 
+		serverurl="test.salesforce.com" 
+		deployRoot="src/MinDev1" />
+    </target>
+    <target name="retrieve">
+        <echo message="Retrieving src from MinDev1" />
+        <sf:retrieve username="kishore@minusculetechnologies.com.mindev1" 
+		password="Lenovo@2019" 
+		serverurl="test.salesforce.com" 
+		retrieveTarget="src/MinDev1" 
+		unpackaged="src/package-objects.xml" />
+    </target>
+    <target name="retrieve14">
+        <echo message="Retrieving src from MinDev14" />
+        <sf:retrieve username="dhanasekaran@minusculetechnologies.com.mindev14" 
+		password="dhana@2019" 
+		serverurl="test.salesforce.com" 
+		retrieveTarget="src/MinDev14" 
+		unpackaged="src/package-objects.xml" />
+    </target>
+	<target name="retrieve12">
+        <echo message="Retrieving src from MinDev12" />
+        <sf:retrieve username="kathavarayan@minusculetechnologies.com.mindev12" 
+		password="seenurani@123" 
+		serverurl="test.salesforce.com" 
+		retrieveTarget="src/MinDev12" 
+		unpackaged="src/package-objects.xml" />
+    </target>
+</project>
