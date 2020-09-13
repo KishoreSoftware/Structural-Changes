@@ -1,12 +1,18 @@
-<project basedir="." xmlns:sf="antlib:com.salesforce">
+<project basedir="."   xmlns:sf="antlib:com.salesforce">
     <taskdef resource="com/salesforce/antlib.xml" classPath="lib/ant-salesforce.jar" uri="antlib:com.salesforce" />
     <property file="build.properties" />
-        <target name="deploy">
+    <target name="deploy">
         <echo message="Deploying to {username}" />
-        <sf:deploy username="{username}" password="{password}" serverurl="test.salesforce.com" deployRoot="src" />
+        <sf:deploy username="{username}" 
+            password="{password}" 
+            serverurl="test.salesforce.com" 
+            deployRoot="src" />
     </target>
-        <target name="retrieve">
+    <target name="retrieve">
         <echo message="Retrieving src from {username}" />
-        <sf:retrieve username="{username}" password="{password}" serverurl="test.salesforce.com" retrieveTarget="src" unpackaged="src/package-objects.xml" />
+        <sf:retrieve username="{username}" 
+            password="{password}" 
+            serverurl="test.salesforce.com" 
+            retrieveTarget="src" unpackaged="package.xml" />
     </target>
 </project>
